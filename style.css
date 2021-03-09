@@ -1,0 +1,110 @@
+body{
+    margin: 0px;
+    background-color: #fff;
+}
+.mynavbar{
+    margin-right: 15%;
+    margin-left: auto;
+    color: #f7fafd;
+    font-size: 18px;
+}
+.container-navbar{
+    max-width: 100%;
+}
+.nav-link{
+
+}
+.logo{
+    height: 80px;
+    width: 80px;
+    opacity: 0.6;
+}
+.toggler{
+    margin-right:20px;
+    color:white;
+}
+nav{
+    
+    font-family: 'Open Sans', sans-serif;    background-color: #024788;
+}
+.navbar-brand{
+    margin-left: 20%;
+}
+.navbar-toggler-icon{
+    color:#f7ba00;
+}
+.header{
+    background-color: #024788;
+}
+.header-row{
+    text-align: center;
+    padding-top: 0px;
+    margin-right: 15%;
+    margin-left: 15%;
+    color: #f7ba00;
+    padding-bottom: 12%;
+}
+.header-data{
+    margin-top:150px;
+}
+.header-title{
+    font-size: 600%;
+    font-family: 'Pacifico', cursive;
+}
+.header-desc{
+    color: white;
+    font-family: 'Open Sans', sans-serif;    margin-top: 50px;
+}
+
+.header-button{
+    font-family: 'Open Sans', sans-serif;    margin-top: 50px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+.header-image-set{
+    margin-left: 100px;
+}
+
+.header-image{
+    height: 500px;
+    width: 300px;
+    border-radius: 7%;
+}
+.hi1{
+    /* position: absolute; */
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.hi2{
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+@media (max-width: 1200px){
+    .mynavbar{
+        margin-right: 0px;
+    }
+    .toggler{
+        margin-right:0px;
+    }
+    .navbar-brand{
+        margin-left: 0%;
+    }
+    .header-image{
+        height: 200px;
+        width: 125px;
+    }
+    .header-data{
+        margin-top:25px;
+    }
+    .header-row{
+        margin:0px;
+    }
+    .header-title{
+        font-size: 600%;
+    }
+    .header-button{
+        margin-bottom: 100px;
+    }
+}
