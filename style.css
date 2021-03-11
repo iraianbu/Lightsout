@@ -1,47 +1,75 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+
 body{
     margin: 0px;
     background-color: #fff;
 }
+.close-btn{
+    color: #666666;
+}
+.modal-content{
+    background-color:#f9f3f3;
+}
+.modal-header{
+    color:#f25287;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem ;
+}
+.modal-body{
+    font-family: 'Open Sans', sans-serif;    
+    color: #666666;
+}
+.form-control{
+    background-color: #f9f3f3;
+}
+.negative{
+    background-color: #f5c0c0;
+    color:#666666
+}
+.positive{
+    color: #fff;
+    background-color: #f25287;
+}
 .mynavbar{
     margin-right: 15%;
     margin-left: auto;
-    color: #f7fafd;
+    color: #f5c0c0;
     font-size: 18px;
 }
 .container-navbar{
     max-width: 100%;
 }
-.nav-link{
 
-}
 .logo{
-    height: 80px;
-    width: 80px;
-    opacity: 0.6;
+    height: 30px;
+    width: 3    0px;
+    /* opacity: 0.6; */
 }
 .toggler{
     margin-right:20px;
-    color:white;
+    color:#f25287;
 }
 nav{
     
-    font-family: 'Open Sans', sans-serif;    background-color: #024788;
+    font-family: 'Open Sans', sans-serif;    
+    background-color: #f9f3f3;
 }
 .navbar-brand{
     margin-left: 20%;
 }
-.navbar-toggler-icon{
-    color:#f7ba00;
-}
+
 .header{
-    background-color: #024788;
+    background-color:#f5c0c0;
 }
 .header-row{
     text-align: center;
     padding-top: 0px;
     margin-right: 15%;
     margin-left: 15%;
-    color: #f7ba00;
+    color: #f25287;
     padding-bottom: 12%;
 }
 .header-data{
@@ -52,7 +80,7 @@ nav{
     font-family: 'Pacifico', cursive;
 }
 .header-desc{
-    color: white;
+    color: #666666;
     font-family: 'Open Sans', sans-serif;    margin-top: 50px;
 }
 
@@ -60,28 +88,260 @@ nav{
     font-family: 'Open Sans', sans-serif;    margin-top: 50px;
     margin-top: 10%;
     margin-bottom: 50px;
+    background-color: #f7ba00;
+    /* border: 1px solid #666666 */
+    
 }
 .header-image-set{
+    padding-top:105px;
     margin-left: 100px;
 }
 
 .header-image{
-    height: 500px;
-    width: 300px;
+    height: 480px;
+    width: 295px;
     border-radius: 7%;
+    object-fit: cover;
+
 }
 .hi1{
     /* position: absolute; */
     margin-right: 0px;
     margin-left: 0px;
+    border-left: 3px solid #f7ba00;
+    border-top: 3px solid #f7ba00;
+
 }
 .hi2{
     position: absolute;
     margin-top: 100px;
     margin-left: 200px;
+    border-left: 3px solid #f7ba00;
+    border-top: 3px solid #f7ba00;
+}
+.sub-heading{
+    margin-left: 20%;
+    font-family: 'Pacifico', cursive;
+    margin-top: 50px;
+    color: #f25287;
+    padding: 80px 0px 30px;
+    font-size: 2.5rem;
+}
+.sub-part{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.product-row{
+    margin: auto;
+    width : 60%;
+    padding-bottom: 40px;
+    padding-top: 60px;
+}
+.product-image-set{
+    /* border-right: 3px solid #f2f2f2; */
+}
+.product-image{
+    height: 250px;
+    width: 250px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.product-data{
+    margin-left: 30px;
+}
+.product-title{
+    margin-top: 30px;
+    font-family: 'Pacifico', cursive;
+    color: #f7ba00;
+}
+.product-desc{
+    color: #666666;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;    margin-top: 50px;
+
+}
+.product-image-set-alt{
+    /* border-left: 3px solid #f2f2f2; */
+    text-align: right;
+
+}
+.product-image-alt{
+    height: 250px;
+    width: 250px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+.product-data-alt{
+    margin-left: 30px;
+    text-align: right;
+}
+hr{
+    width: 50%;
+    color: #000 ;
+    margin:auto;
+    visibility: hidden;
+}
+.place-hr{
+    width: 30%;
+    
+}
+.places{
+    background-color: #f9f3f3;
+
+}
+.places-row{
+    width:60%;
+    margin:auto;
+    padding:50px;
+
+}
+.place-set{
+    text-align: center;
+}
+.place-image{
+    height: 300px;
+    width: 300px;
+    border-radius: 2%;
+    object-fit: cover;
+}
+.place-title{
+    margin-top: 50px;
+    color:#f7ba00;
+    font-family: 'Pacifico', cursive;
+}
+.place-desc{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif;   
 }
 
+
+.author-quote{
+    width: 50%;
+    background-color: #fcfcfc;
+    color: #666666;
+    margin: 100px auto;
+}
+.author-quote-data{
+    padding: 50px;
+    text-align: justify;
+    color: #666666;
+    font-family: 'Open Sans', sans-serif; 
+}
+.author-quote-name{
+    color: #666666;
+    font-family: 'Open Sans', sans-serif; 
+    text-align: right;
+    padding-right: 50px;
+}
+.slideshow{
+    color: #666666;
+}
+.slide{
+    padding: 50px 0px;
+    margin: auto;
+}
+.carousel-inner{
+    width:50%;
+    margin: auto;
+}
+.slide-image{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.slide-data{
+    padding-top:50px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif; 
+
+}
+.contact{
+    background-color: #f5c0c0;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.contact-row-main{
+    font-family: 'Open Sans', sans-serif; 
+    width: 50%;
+    margin:auto;
+}
+.call-us-btn{
+    color:#f25287;
+    border: 1px solid #f25287;
+    background-color : #f5c0c0;
+}
+.call-us-btn:hover{
+    color: #f9f3f3;
+    background-color: #f25287;
+}
+.request-btn-bottom{
+    background-color: #f9f3f3;
+}
+.request-btn-bottom:hover{
+    background-color: #f5c0c0;
+    color: #f25287;
+    border: 1px solid #f25287
+}
+.contact-icon-set{
+    display: inline-block;
+    margin:auto;
+    text-align: center;
+    color: #f25287;
+}
+.contact-icon{
+    display: inline-block;
+    padding: 10px 20px;
+}
+.contact-icon-link{
+    font-size: larger;
+    color: #f25287;
+}
+.copyright{
+    color: #666666;
+    font-size: smaller;
+    text-align: center;
+    padding: 30px 0px 10px;
+}
 @media (max-width: 1200px){
+    .logo{
+        height: 50px;
+        width: 50px;
+       
+    }
+    .product-row{
+        width: 70%;
+    }
+    
+    .place-image{
+        height: 200px;
+        width: 200px;
+    }
+    
+    .product-data, .product-data-alt{
+        margin-left:0px;
+
+    }
+  
+    .carousel-inner{
+        width:70%;
+        margin: auto;
+    }
+    .place-set{
+        padding-top:30px;
+    }
+}
+@media (max-width: 990px){
+    .logo{
+        height: 40px;
+        width: 40px;
+       
+    }
+    .header{
+        padding-top:100px;
+    }
     .mynavbar{
         margin-right: 0px;
     }
@@ -92,8 +352,12 @@ nav{
         margin-left: 0%;
     }
     .header-image{
+        padding: 30px;
         height: 200px;
         width: 125px;
+    }
+    .hi1{
+        margin-top:100px;
     }
     .header-data{
         margin-top:25px;
@@ -107,4 +371,85 @@ nav{
     .header-button{
         margin-bottom: 100px;
     }
+    .sub-heading{
+        text-align: center;
+        margin: 0%;
+        font-size: ;
+    }
+    .product-data, .product-data-alt {
+        text-align: center;
+        
+    }
+    .product-row{
+        width: 90%;
+    }
+    .place-set{
+        text-align: center;
+        margin: auto;
+        
+    }
+    .places-row{
+        padding:0px;
+    }
+    .product-image-set, .product-image-set-alt{
+        text-align: center;
+    }
+    .place-title{
+        margin-top: 20px;
+    }
+    hr{
+        visibility: visible;
+    }
+
+    .author-quote{
+        width: 80%;
+        margin: 100px auto;
+    }
+    .author-quote-data{
+        padding: 10px; 
+    }
+    .author-quote-name{
+        
+    }
+    .carousel-inner{
+        width: 80%;
+        
+    }
+    .slide{
+        padding: 20px 0px;
+    }
+    .slide-image{
+        height: 200px;
+        width: 200px;
+    }
+    .slide-image-set{
+        text-align: center;
+        margin: auto;
+    }
+    .slide-data{
+        text-align: center;
+    
+    }
+   
+    .contact-row-main{
+        font-family: 'Open Sans', sans-serif; 
+        width: 90%;
+        text-align: center;
+    }
+    .contact-btn{
+        text-align: center;
+        padding: 10px 0px;
+    }
+    .contact-icon{
+        display: inline-block;
+        padding: 30px 20px 0px;
+    }
+    .contact-icon-link{
+        font-size: larger;
+        color: #f25287;
+    }
+ 
+    
 }
+
+
