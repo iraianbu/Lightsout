@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-
+    <link rel="icon" href="resources/favicon.ico" type="image/gif" sizes="16x16">
     <!-- stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -25,24 +25,30 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid container-navbar">
-            <a class="navbar-brand" href="#"><img src="lightsOut.png" class="logo"></a>
+            <a class="navbar-brand" href="#"><img src="resources/lightsOut.png" class="logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#theNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-utensils toggler"></i>
             </button>
             <div class="collapse navbar-collapse " id="theNavbar">
                 <ul class="navbar-nav mynavbar">
                     <li class="navbar-item">
-                        <a class="nav-link" href="#" style="padding-left: 2rem; color: #f7ba00; "> Home </a>
+                        <a class="nav-link" href="#products" style="padding-left: 2rem; color: #f25287; "> Products </a>
                     </li>
                     <li class="navbar-item">
-                        <a class="nav-link" href="#" style="padding-left: 2rem; color: #f7ba00;"> Services </a>
+                        <a class="nav-link" href="#ourTeam" style="padding-left: 2rem; color: #f25287; "> Our Team </a>
                    </li>
+                    <li class="navbar-item">
+                        <a class="nav-link" href="#places" style="padding-left: 2rem; color: #f25287;"> Our places </a>
+                   </li>
+                   
                    <li class="navbar-item">
-                        <a class="nav-link" href="#" style="padding-left: 2rem; color: #f7ba00; "> Request Order </a>
-                   </li>
-                        
+                    <a class="nav-link" href="#contact" style="padding-left: 2rem; color: #f25287; "> Contact </a>
+                </li>
+                    <li class="navbar-item">
+                    <a class="nav-link" href="#" style="padding-left: 2rem; color: #f25287; " data-toggle="modal" data-target="#RequestOrder"> Request Order </a>
+                </li>
                     
                 </ul>
             </div>
@@ -51,30 +57,303 @@
     </nav>
     
 
-    <div class="container-fluid header">
+    <div class="container-fluid header" id="header">
         <div class="row header-row">
-            <div class="col-lg-6 header-data">
+            <div class="col-lg-5 header-data">
                 <h1 class="header-title"> Lights Out </h1>
                 <p class="header-desc"> We do what you luv, That's we are </p>
-                <button class="btn btn-large btn-warning header-button"> Request Order </button>
+                <button class="btn btn-large header-button" data-toggle="modal" data-target="#RequestOrder"> Request Order </button>
             </div>
             <div class="col-lg-6 header-art">
                 <div class="header-image-set">
                     
-                    <img class="header-image hi2 d-none d-lg-block" src="https://wildwildwhisk.com/wp-content/uploads/2014/09/Orange-Mascarpone-Ice-Cream-6.jpg" alt="ice-creams">
-                    <img class="header-image hi1 d-none d-lg-block" src="https://images.squarespace-cdn.com/content/v1/542c3752e4b074e7934253a3/1417307453822-IZ05SZ8XXRO3TZG71BHT/ke17ZwdGBToddI8pDm48kIMEciPMVxhiwV26vGZXead7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmTqyr0YSX1lQOSnWxEpwDIiZYwoU5TXLmSfu8zfjAmGSLirzeEDdUMbVrhLIDeAdu/vanillamini.jpg?format=750w" alt="cotton-candy">
+                    <img class="header-image hi2 d-none d-xl-block " src="https://wildwildwhisk.com/wp-content/uploads/2014/09/Orange-Mascarpone-Ice-Cream-6.jpg" alt="ice-creams">
+                    <img class="header-image hi1 d-none d-lg-block " src="https://images.squarespace-cdn.com/content/v1/542c3752e4b074e7934253a3/1417307453822-IZ05SZ8XXRO3TZG71BHT/ke17ZwdGBToddI8pDm48kIMEciPMVxhiwV26vGZXead7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QHyNOqBUUEtDDsRWrJLTmTqyr0YSX1lQOSnWxEpwDIiZYwoU5TXLmSfu8zfjAmGSLirzeEDdUMbVrhLIDeAdu/vanillamini.jpg?format=750w" alt="cotton-candy">
                 </div>
             </div>
         </div>
     </div>
 
+      
+      <!-- Modal -->
+      <div class="modal fade" id="RequestOrder" tabindex="-1" role="dialog" aria-labelledby="requestsModelLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Request Order</h5>
+              <button type="button" class="btn btn-sm close-btn" data-dismiss="modal" aria-label="Close">
+                X
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label>Your Good Name </label>
+                      <input type="text" class="form-control" placeholder="Your Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                      <label>Your Email-ID</label>
+                      <input type="email" class="form-control" placeholder="Email ID">
+                      <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <br>
+                    </div>
+                    <br><br>
+                    <div class="row">
+                        <div class="col-6">
+                            <label>Date</label>
+                            <input type="date" class="form-control" >
+                        </div>
+                        <div class="col-6">
+                            <label>Location</label>
+                            <select class="form-control">
+                                <option>Choose</option>
+                                <option>Ambattur</option>
+                                <option>Perambur</option>
+                                <option>Mambalam</option>
+                                <option>Egmore</option>
+                                <option>Guindy</option>
+                                <option>Mylapore</option>
+                                <option>Velachery</option>
+                                <option>Alandur</option>
+                                <option>Sholinganallur</option>
+                                <option>Chengalpet</option>
+                                <option>Melmaruvathur</option>
+                                <option>Cheyyur</option>
+                                <option>Madurantakam</option>
+                            </select>
+                        </div>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn negative" data-dismiss="modal">Cancel Request</button>
+              <button type="button" class="btn positive" data-dismiss="modal" onclick="result()">Send Request</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <!-- products -->
+
+    <div class="container-fluid sub-part" id="products">
+        <h1 class="sub-heading"> We Offer </h1>
+        <div class="row product-row">
+            <div class="col-lg-5 product-image-set">
+                <img class="product-image" src="https://www.tasteofhome.com/wp-content/uploads/2021/01/champagne-cotton-candy-QT-1200x800.jpg?resize=768,512">
+            </div>
+            <div class="col-lg-6 product-data">
+                <h3 class="product-title">
+                    Cotton-candy
+                </h3>
+                <p class="product-desc">
+                    Cotton candy - a fluffy ball, We make them in multi-color, that tastes well and good. A BIG one ends nothing in your mouth.
+                </p>
+            </div>
+        </div>
+        <br><hr class=""><br>
+
+        <div class="row product-row">
+            <div class="col-lg-5 product-image-set-alt d-lg-none ">
+                <img class="product-image-alt" src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Thomas-Jefferson-s-Vanilla-Ice-Cream_EXPS_THJJ19_159803_B02_21_11b-2-32.jpg?fit=300,300">
+            </div>
+            <div class="col-lg-6 product-data-alt">
+                <h3 class="product-title">
+                    Ice-creams
+                </h3>
+                <p class="product-desc">
+                    Ice Creams, this is the Gold Mine of any Happy Moments. We bring all kinds of ice-creams in all kinds of flavours for all kind of parties.
+                </p>
+            </div>
+            <div class="col-lg-5 product-image-set-alt d-none d-lg-block">
+                <img class="product-image-alt" src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Thomas-Jefferson-s-Vanilla-Ice-Cream_EXPS_THJJ19_159803_B02_21_11b-2-32.jpg?fit=300,300">
+            </div>
+            
+        </div>
+        <br><hr class=""><br>
+        <div class="row product-row">
+            <div class="col-lg-5 product-image-set">
+                <img class="product-image" src="https://www.tasteofhome.com/wp-content/uploads/2017/09/exps8421_MTC153706B03_03_2b.jpg?resize=700,700">
+            </div>
+            <div class="col-lg-6 product-data">
+                <h3 class="product-title">
+                    Pop Corn
+                </h3>
+                <p class="product-desc">
+                    Pop-corn - "Pop the Horn", that means nothing. The same would be if this popping corns miss your parties. 
+                </p>
+            </div>
+        </div>
+        <br><hr class=""><br>
+        <div class="row product-row">
+            <div class="col-lg-5 product-image-set-alt d-lg-none">
+                <img class="product-image-alt" src="https://lh3.googleusercontent.com/-yaXnKF-IXUU/WJBwfL3VoRI/AAAAAAAAAAo/geDKIS9pA3M11lKANg5SE0gYXt6glLOzACLIB/w1080-h608-p-k-no-v0/">
+            </div>
+            <div class="col-lg-6 product-data-alt">
+                <h3 class="product-title">
+                    Indian Sweet-Paan
+                </h3>
+                <p class="product-desc">
+                    Lets' say Beeda, that sounds good, right. And it also tastes good. We make everything Special and this is beyond that.  
+                </p>
+            </div>
+            <div class="col-lg-5 product-image-set-alt d-none d-lg-block">
+                <img class="product-image-alt" src="https://lh3.googleusercontent.com/-yaXnKF-IXUU/WJBwfL3VoRI/AAAAAAAAAAo/geDKIS9pA3M11lKANg5SE0gYXt6glLOzACLIB/w1080-h608-p-k-no-v0/">
+            </div>
+            
+        </div>
+    </div>
 
     
+
+     <!-- slideshow -->
+     <div class="container-fluid slideshow" id="ourTeam">
+        <h1 class="sub-heading"> Our Team </h1>
+        <div id="myslideshow" class="carousel slide" data-ride="carousel" data-interval="3000" data-pause="false" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                    <div class="col-lg-6 slide-image-set">
+                        <img class="slide-image" src="resources/manoj.jpeg">
+                    
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="slide-data">
+                            <h1 class="slide-title"> ManojKumar Vasudevan </h1>
+                            <p class="slide-desc">  <em>The Boss</em></p>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 slide-image-set">
+                        <img class="slide-image" src="resources/cheenu.jpg">
+                    
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="slide-data">
+                            <h1 class="slide-title"> Iraianbu Thiyagarajan </h1>
+                            <p class="slide-desc">  <em>The Advisor</em></p>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-lg-6 slide-image-set">
+                        <img class="slide-image" src="resources/praveen.JPG">
+                    
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="slide-data">
+                            <h1 class="slide-title"> Praveen Saravanan </h1>
+                            <p class="slide-desc"> <em>The Well-Wisher</em></p>
+                        </div>
+                        
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- author-quote -->
+
+    <div class="container-fluid alert alert-secondary author-quote" >
+        <p class="author-quote-data">&emsp; <em><strong>"</strong>
+             We younster! Believe that happy moments are captured well in memories than camera. So, for your every parties and weddings make the moments of joy and happiness, The Happiest with <strong>LightsOut
+            "</strong></em></p>
+        <p class="author-quote-name">
+            <em>-ManojKumar Vasudevan, CEO.</em>
+        </p>
+    </div>
+    <!-- places -->
+
+
+    <div class="container-fluid places" id="places">
+        <h1 class="sub-heading"> We are currently in </h1>
+
+        <div class="row places-row">
+            <div class="col-lg-6 place-set">
+                <img class="place-image" src = "https://media.istockphoto.com/photos/chennai-nightscape-picture-id469550423?k=6&m=469550423&s=612x612&w=0&h=Mbg5jDrJCKa4XjlvX0R_BJFq53E7PkKAkI4avfSuFfI=">
+                <h2 class="place-title">
+                    Chennai
+                </h2>
+                <p class="place-desc">
+                    
+                </p>
+            </div>
+            
+            <div class="col-lg-6 place-set">
+                <img class="place-image" src = "https://media.istockphoto.com/photos/marina-beach-police-station-marina-beach-tamil-nadu-india-chennai-21-picture-id1224950496?k=6&m=1224950496&s=612x612&w=0&h=4ecvyEa0Lc-QkoFTE_HNiZ4fe_ykIduLFMGY7atTwNI=">
+                <h2 class="place-title">
+                    Chengalpet
+                </h2>
+                <p class="place-desc">
+                    
+                </p>
+            </div>
+        </div>
+    </div>
     
 
+   
+
+    <div class="contact" id="contact">
+        <h1 class="sub-heading"> Contact </h1>
+        <div class="row contact-row-main">
+            <div class="col-lg-6">
+                <p> No more waiting for better one, The perfect is here! Grab your phone and call us directly or email us</p>
+            </div>
+            <div class="col-lg-2 contact-btn">
+                <button class="btn btn-large btn-outline call-us-btn">Call us</button>
+
+            </div>
+            <div class="col-lg-3 contact-btn">
+                <button class="btn btn-large btn-light request-btn-bottom" data-toggle="modal" data-target="#RequestOrder"> Request Order</button>
+            </div>
+            
+        </div>
+        <div class="row contact-row-main">
+            <ul class="contact-icon-set">
+                <li class="contact-icon"> 
+                    <a href="#" > <i class="fas fa-at contact-icon-link"></i></a>
+                </li>
+                <li class="contact-icon"i> 
+                    <a href="#" > <i class="fab fa-pinterest-p contact-icon-link" ></i></a>
+                </li>
+                <li class="contact-icon"> 
+                    <a href="#" > <i class="fab fa-instagram contact-icon-link"></i></a>
+                </li>
+                <li class="contact-icon"> 
+                    <a href="#" > <i class="fab fa-facebook-f contact-icon-link"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p class="copyright"> Copyright © LightsOut, 2021. All rights reserved.</p>
+
+    </div>
+    
     
 <!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    function result(){
+        alert("Your form is not validated as i din' learn Javascript yet. And your Request is rejected. LOL!")
+
+        
+    }
+  
+</script>
 
 </body>
 </html>
