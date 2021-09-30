@@ -1,2 +1,2 @@
 # Lightsout 
-and [Check this out](https://iraianbu.github.io/Lightsout/)
+[link](https://iraianbu.github.io/Lightsout/)
